@@ -14,6 +14,14 @@
 */
 
 // Code here
+class CarFactory {
+  constructor(make,model){
+    this.make = make;
+    this.model = model;
+  }
+}
+
+
 
 
 
@@ -33,10 +41,22 @@ function Employee(name, email, hireDate) {
 */
 
 // Code here
-
+var bob = new Employee ('Bob', 'bob@gmail.com','01-02-98')
 
 
 ////////// PROBLEM 4 //////////
+class Car {
+  constructor (make, model, year){
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.milage = 0
+  }
+  moveCar(){
+    this.milage += 10;
+    return this.milage
+  }
+}
 
 // Do not edit the code below.
 var prius = new Car('Toyota', 'Prius', 2011);
@@ -44,6 +64,7 @@ var mustang = new Car('Ford', 'Mustang', 2013);
 prius.moveCar(); // Increments prius' move property by 10. Returns the new move property.
 mustang.moveCar(); // Increments mustang' move property by 10. Returns the new move property.
 // Do not edit the code above.
+
 
 /*
   Write a constructor function, including method definitions, which will make the above function invocations function properly.
